@@ -141,6 +141,7 @@ body {
     opacity: 0;
     position: relative;
     overflow: hidden;
+    background-size: cover;
 }
 
 .flex__item--right {
@@ -148,6 +149,8 @@ body {
     transform-origin: right center;
     transition: transform 0.1s linear 0s;
     opacity: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .flex--preStart .flex__item--left,
@@ -157,60 +160,64 @@ body {
     opacity: 1;
 }
 
-
 /* Piplup */
 
 .flex--piplup .flex__item--left {
-    background: #3e9fe6;
+    background-image: url("./images/bg1.jpg");
+
 }
 
 .flex--piplup .flex__item--right {
-    background: #d3eaef;
+    background-image: url('./images/mandala1.jpg');
 }
-
 
 /* Pikachu */
 
 .flex--pikachu .flex__item--left {
-    background: #f8d41f;
+    background-image: url("./images/bg2.jpg");
+
 }
 
 .flex--pikachu .flex__item--right {
-    background: #f4ecc5;
-}
+    background-image: url('./images/mandala3.jpeg');
+    
 
+}
 
 /* Blaziken */
 
 .flex--blaziken .flex__item--left {
-    background: #f64f37;
+    background-image: url("./images/bg3.jpg");
+
 }
 
 .flex--blaziken .flex__item--right {
-    background: #ffebcd;
+    background-image: url('./images/mandala2.jpg');
 }
-
 
 /* Dialga */
 
 .flex--dialga .flex__item--left {
-    background: #476089;
+    background-image: url("./images/bg4.jpg");
+
 }
 
 .flex--dialga .flex__item--right {
-    background: #ade8f7;
-}
+    background-image: url('./images/mandala4.jpg');
 
+}
 
 /* Zekrom */
 
 .flex--zekrom .flex__item--left {
-    background: #424242;
+    background-image: url("./images/bg5.png");
+
 }
 
 .flex--zekrom .flex__item--right {
-    background: #a7bcbb;
+    background-image: url("./images/mandala5.jpg");
 }
+
 
 .flex__content {
     margin-left: 80px;
