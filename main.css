@@ -9,10 +9,10 @@
 
 .slider__navi {
     background:none;
-    height: 10vh;
-    width: 10vh;
+    height: 9vh;
+    width: 9vh;
     position: absolute;
-    bottom: 20vh;
+    bottom: 25vh;
     right: 1vw;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -33,17 +33,28 @@
     display: block;
     height: 100%;
     width: 100%;
-    margin: 20px 0;
+    margin: 15px 0;
     box-shadow: none;
     border: none;
     border-radius: 100%;
     background: #F4F4F4;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     color: black;
+    transition: all 200ms;
+}
+
+#up
+{
+    font-size: 6vh;
+    text-align: center;
+    line-height: 130%;
+}
+
+#down
+{
     font-size: 6vh;
     text-align: center;
     line-height: 170%;
-    transition: all 200ms;
 }
 
 a:visited
@@ -229,7 +240,7 @@ body {
 
 .pokemon__img {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     right: 10vw;
     max-height: 40vw;
     opacity: 1;
