@@ -9,6 +9,7 @@
     <meta name="author" content="System Admin MIT Manipal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./mobile.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./script.js"></script>
 </head>
@@ -77,12 +78,41 @@
         </div>
     </div>
     <div class="slider__navi">
-        <a href="#" class="slide-nav active" data-slide="1">pikachu</a>
-        <a href="#" class="slide-nav" data-slide="2">piplup</a>
+        <a href="#" class="slide-nav" id="up"> </a>
+        <a href="#" class="slide-nav" id="down">  &#9660;</a>
+        <!-- <a href="#" class="slide-nav" data-slide="2">piplup</a>
         <a href="#" class="slide-nav" data-slide="3">blaziken</a>
         <a href="#" class="slide-nav" data-slide="4">dialga</a>
-        <a href="#" class="slide-nav" data-slide="5">zekrom</a>
+        <a href="#" class="slide-nav" data-slide="5">zekrom</a> -->
     </div>
 </body>
+
+<script type="text/javascript">
+$('#down').on('click', function(e) 
+    {
+    e.preventDefault();
+    var current = $('.flex--active').data('slide');
+      $('.slider__wrapper').find('.flex__container[data-slide=' + ((current%5)+1) + ']').addClass('flex--preStart');
+      $('.flex--active').addClass('animate--end');
+      setTimeout(function() {
+        $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+        $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+      }, 800);
+  });
+
+$('#up').on('click', function(e) 
+    {
+    e.preventDefault();
+    var current = $('.flex--active').data('slide');
+    next = current == 1 ? 5 : current - 1;
+      $('.slider__wrapper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+      console.log(next);
+      $('.flex--active').addClass('animate--end');
+      setTimeout(function() {
+        $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+        $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+      }, 800);
+  });
+</script>
 
 </html>

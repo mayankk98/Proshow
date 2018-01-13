@@ -8,8 +8,11 @@
 }
 
 .slider__navi {
+    background:none;
+    height: 10vh;
+    width: 10vh;
     position: absolute;
-    top: 50%;
+    bottom: 20vh;
     right: 1vw;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -17,21 +20,37 @@
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     z-index: 999;
+}   
+
+.slider__navi > a:hover
+{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: translateY(-2px);
 }
 
-.slider__navi a {
+.slider__navi > a {
+    text-decoration: none;
     display: block;
-    height: 6px;
-    width: 20px;
+    height: 100%;
+    width: 100%;
     margin: 20px 0;
-    text-indent: -9999px;
     box-shadow: none;
     border: none;
-    background: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    background: #F4F4F4;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: black;
+    font-size: 6vh;
+    text-align: center;
+    line-height: 170%;
+    transition: all 200ms;
 }
 
-.slider__navi a.active {
-    background: rgba(255, 255, 255, 1);
+a:visited
+{
+    color: black;
+
+
 }
 
 body {
@@ -71,7 +90,7 @@ body {
 }
 
 .text--sub {
-    font-size: 1.2vw;
+    font-size: 2vh;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
     margin-bottom: 16vh;
@@ -85,9 +104,9 @@ body {
 }
 
 .text--normal {
-    font-size: 1.1vw;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.4vw;
+    font-size: 2.5vh;
+    color: rgba(255, 255, 255, 1);
+    line-height: 2.7vh;
     /*margin-top: 25px;*/
 }
 
@@ -204,7 +223,7 @@ body {
 .pokemon__img {
     position: absolute;
     bottom: 20px;
-    right: 15%;
+    right: 10vw;
     max-height: 40vw;
     opacity: 1;
     transform: translate3d(0, 0, 0);
