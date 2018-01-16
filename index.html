@@ -1,82 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 
-<head>
-    <title> Revels 2018 | Proshow </title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Proshow for Revels 2018">
-    <meta name="keywords" content="Proshow, Revels, 2018, Traditions">
-    <meta name="author" content="System Admin MIT Manipal">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./main.css">
-    <link rel="stylesheet" type="text/css" href="./mobile.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./script.js"></script>
-</head>
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<style>
+	#fs-form-wrap{
+		background-image:url(images/ticket.jpg);
+		background-size:     cover;
+    	background-repeat:   no-repeat;
+   		background-position: center center;
+   		width:100%;
+   		height:100%;
 
-<body>
-    <div class="slider__wrapper">
-        <div class="flex__container flex--artist1 flex--active" data-slide="1">
-            <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Day 1</p>
-                    <h1 class="text--big">Artist 1</h1>
-                    <p class="text--normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-            </div>
-            <div class="flex__item flex__item--right"></div>
-            <img class="artist__img" src="./images/artist1.png" />
-        </div>
-        <div class="flex__container flex--artist2 animate--start" data-slide="2">
-            <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Day 2</p>
-                    <h1 class="text--big">Artist 2</h1>
-                    <p class="text--normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-            </div>
-            <div class="flex__item flex__item--right"></div>
-            <img class="artist__img" src="./images/artist2.png" />
-        </div>
-        <div class="flex__container flex--artist3 animate--start" data-slide="3">
-            <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Day 3</p>
-                    <h1 class="text--big">Artist 3</h1>
-                    <p class="text--normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-            </div>
-            <div class="flex__item flex__item--right"></div>
-            <img class="artist__img" src="./images/artist3.png" />
-        </div>
-        <div class="flex__container flex--artist4 animate--start" data-slide="4">
-            <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Day 4</p>
-                    <h1 class="text--big">Artist 4</h1>
-                    <p class="text--normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-            </div>
-            <div class="flex__item flex__item--right"></div>
-            <img class="artist__img" src="./images/artist4.png" />
-        </div>
-        <div class="flex__container flex--artist5 animate--start" data-slide="5">
-            <div class="flex__item flex__item--left">
-                <div class="flex__content">
-                    <p class="text--sub">Day 5</p>
-                    <h1 class="text--big">Artist 5</h1>
-                    <p class="text--normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-            </div>
-            <div class="flex__item flex__item--right"></div>
-            <img class="artist__img" src="./images/artist5.png" />
-        </div>
-    </div>
-    <div class="slider__navi">
-        <a href="#" class="slide-nav" id="up">  &#9650;</a>
-        <a href="#" class="slide-nav" id="down">  &#9660;</a>
-        <a href="#" class="silde-nav" id="formBtn"> &#9723;</a>
-    </div>
-</body>
 
+	}
+	#q1{
+		background:transparent;
+	}
+	#q2{
+		background:transparent;
+	}
+	#q3{
+		background:transparent;
+	}
+	#s {
+		background-color:black;
+		position: absolute;
+		right:    0;
+		bottom:   100px;
+	}
+	</style>
+	<body>
+		<div class="container">
+
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+				<center>
+					<h1> Register Now</h1>
+					</center>
+				</div>
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off" method="post" action="https://www.google.com">
+					<ol class="fs-fields">
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q1" >Name</label>
+							<input class="fs-anim-lower" id="q1" name="q1" type="text"  required/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q2" >Email Address</label>
+							<input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="dean@road.us" required/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q3">Registration Number</label>
+							<input class="fs-anim-lower" id="q3" name="q3" type="number" placeholder="16092320" required/>
+						</li>
+
+
+
+					</ol><!-- /fs-fields -->
+					<button class="fs-submit" type="submit">Submit</button>
+
+
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+
+		<script src="js/fullscreenForm.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+				new FForm(formWrap);
+			})();
+		</script>
+	</body>
 </html>
