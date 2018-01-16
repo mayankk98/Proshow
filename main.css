@@ -70,6 +70,12 @@
     text-align: center;
 }
 
+#formBtn
+{
+    font-size: 6.4vh;
+    text-align: center;
+
+}
 a:visited
 {
     color: black;
@@ -82,7 +88,7 @@ body
     font-weight: 400;
 
     position: relative;
-
+    overflow: auto;
     min-height: 100vh;
     margin: 0;
 }
@@ -146,6 +152,10 @@ body
     /*margin-top: 25px;*/
 }
 
+.text--sub, .text--big, .text--normal
+{
+    margin-left: 40px;
+}
 .flex__item
 {
     height: 100vh;
@@ -154,6 +164,7 @@ body
 
     color: #fff;
 }
+
 
 .flex__item--left
 {
@@ -182,10 +193,10 @@ body
 .flex__item--right
 {
     width: 35%;
-
+    position: absolute;
     transition: transform .1s linear 0s;
     transform-origin: right center;
-
+    right: 0;
     opacity: 0;
     background-repeat: no-repeat;
     background-size: cover;

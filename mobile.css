@@ -9,7 +9,7 @@
     {
         width: 100%;
         height: 40vh;
-        margin-top: -10vh;
+        margin-top: 64vh;
 
         transform: skewY(-5deg);
     }
@@ -46,7 +46,7 @@
         line-height: 4vh;
 
         position: relative;
-        right: 10vw;
+        right: 15vw;
         bottom: 20vh;
 
         width: 80vw;
@@ -69,8 +69,9 @@
     }
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 420px)
 {
+
     .artist__img
     {
         right: 20vw;
@@ -80,20 +81,45 @@
 
     .text--big
     {
-        right: 18vw;
+        font-size: 12vh;
+        right: 32vw;
     }
 
     .text--sub
     {
-        right: 9vw;
+        right: 20vw;
+    }
+
+    .text--normal
+    {
+        right: 18vw;
     }
 }
 
-@media screen and (max-width: 550px)
+@media screen and (max-width: 380px)
 {
     #up,
     #down
     {
         font-size: 6vh;
+    }
+
+
+    .text--big
+    {
+        font-size: 12vh;
+        top: -10vh;
+        right: 36vw;
+    }
+
+    .text--sub
+    {
+        top: 8vh;
+        right: 24vw;
+    }
+
+    .text--normal
+    {
+        right: 24vw;
     }
 }
