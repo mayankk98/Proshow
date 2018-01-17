@@ -35,12 +35,10 @@ $(document).ready(function() {
     })
     
     $("#formBtn").on('click', function(e){
-        e.preventDefault();
-       
-        
+        e.preventDefault();        
         $("img.artist__img").animate({bottom: "-300px"},"slow");
-        $("div.flex__item.flex__item--left").animate({width : 'auto', left : '-1000px'}, "slow");
-        $("div.flex__item.flex__item--right").animate({width : 'auto', right : '-1000px'}, "slow");
+        $("div.flex__item.flex__item--left").animate({left : '-1000px'}, "slow");
+        $("div.flex__item.flex__item--right").animate({right : '-1000px'}, "slow");
         $("body").css({"background-color": "grey", "opacity": "0.4", "overflow": "none"});
         console.log("show");
     });
