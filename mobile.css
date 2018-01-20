@@ -71,7 +71,6 @@
 
 @media screen and (max-width: 420px)
 {
-
     .artist__img
     {
         right: 20vw;
@@ -82,6 +81,7 @@
     .text--big
     {
         font-size: 12vh;
+
         right: 32vw;
     }
 
@@ -98,16 +98,10 @@
 
 @media screen and (max-width: 380px)
 {
-    #up,
-    #down
-    {
-        font-size: 6vh;
-    }
-
-
     .text--big
     {
         font-size: 12vh;
+
         top: -10vh;
         right: 36vw;
     }
