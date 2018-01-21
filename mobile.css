@@ -98,6 +98,13 @@
 
 @media screen and (max-width: 380px)
 {
+    #up,
+    #down
+    {
+        font-size: 6vh;
+    }
+
+
     .text--big
     {
         font-size: 12vh;
