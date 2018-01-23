@@ -29,7 +29,7 @@ body {
 }
 
 #fs-form-wrap{
-		background-image:url(images/ticket1.jpg);
+		background-image:url('./images/ticket1.jpg');
 		background-size: contain;
     	background-repeat:   no-repeat;
    		background-position: center center;
@@ -57,7 +57,7 @@ body {
 	@media screen and (max-width: 420px) {
 
 	#fs-form-wrap{
-		background-image:url(images/ticket_mobile.jpg);
+		background-image:url('./images/ticket_mobile.jpg');
 		background-size: contain;
     	background-repeat:   no-repeat;
    		background-position: center center;
