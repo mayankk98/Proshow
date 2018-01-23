@@ -1,17 +1,32 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 
 
-*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
-.clearfix:before, .clearfix:after { content: ''; display: table; }
-.clearfix:after { clear: both; }
+*, *:after, *:before 
+{ 
+	-webkit-box-sizing: border-box; box-sizing: border-box; 
 
-html, body, .container {
+}
+
+.clearfix:before, .clearfix:after 
+{ 
+	content: '';
+	display: table;
+}
+
+.clearfix:after
+{
+	clear: both;
+}
+
+html, body, .container 
+{
 	height: 100%;
 	overflow: hidden;
 
 }
 
-body {
+body 
+{
 	color: #fff;
 	font-weight: 400;
 	font-size: 1em;
@@ -20,7 +35,8 @@ body {
 }
 
 /* Main form wrapper */
-.fs-form-wrap {
+.fs-form-wrap 
+{
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -28,90 +44,105 @@ body {
 
 }
 
-#fs-form-wrap{
-		background-image:url('./images/ticket1.jpg');
-		background-size: contain;
-    	background-repeat:   no-repeat;
-   		background-position: center center;
-   		width: auto;
-   		height: 80%;
-   		top: 10%;
+#fs-form-wrap
+{
+	background-image:url('./images/ticket1.jpg');
+	background-size: contain;
+	background-repeat:   no-repeat;
+	background-position: center center;
+	width: auto;
+	height: 80%;
+	top: 10%;
 
 
-	}
-	#q1{
-		background:transparent;
-	}
-	#q2{
-		background:transparent;
-	}
-	#q3{
-		background:transparent;
-	}
-	#s {
-		background-color:black;
-		position: absolute;
-		right:    0;
-		bottom:   100px;
-	}
-	@media screen and (max-width: 420px) {
+}
 
-	#fs-form-wrap{
+#q1
+{
+	background:transparent;
+}
+
+#q2
+{
+	background:transparent;
+}
+
+#q3
+{
+	background:transparent;
+}
+
+#s
+{
+	background-color:black;
+	position: absolute;
+	right:    0;
+	bottom:   100px;
+}
+
+@media screen and (max-width: 420px) {
+
+	#fs-form-wrap
+	{
 		background-image:url('./images/ticket_mobile.jpg');
 		background-size: contain;
-    	background-repeat:   no-repeat;
-   		background-position: center center;
-   		width: auto;
-   		height: 80%;
-   		top: 10%;
-
-
+		background-repeat:   no-repeat;
+		background-position: center center;
+		width: auto;
+		height: 80%;
+		top: 10%;
 	}
 
 
 }
-.overview .fs-form-wrap {
+
+
+.overview .fs-form-wrap
+{
 	height: auto;
 }
 
 /* Title */
-.fs-title {
+.fs-title
+{
 	position: absolute;
 	top: 10%;
 	left: 30%;
 	margin: 0;
 	padding: 40px;
 	width: 100%;
-}
-
-.fs-title h1 {
-	margin: 0;
+	color: #cd0000;
 }
 
 /* Form */
-.fs-form {
+.fs-form
+{
 	position: relative;
 	text-align: left;
 	font-size: 2em;
 }
 
-.no-js .fs-form {
+.no-js .fs-form 
+{
 	padding: 0 0 6em 0;
 }
 
 /* Views (fullscreen and overview)*/
-.fs-form-full {
+.fs-form-full
+{
 	top: 32%;
 	margin: 0 auto;
 	width: 70%;
 }
 
 .fs-form-full,
-.fs-message-error {
+.fs-message-error 
+{
 	max-width: 960px;
 }
 
-.fs-form-overview {
+.fs-form-overview 
+{
 	margin-top: -6%; 
 	padding: 2.5em 30% 6em;
 	width: 100%;
@@ -121,7 +152,8 @@ body {
 	font-size: 1.2em;
 }
 
-.fs-form-overview .fs-fields::before {
+.fs-form-overview .fs-fields::before 
+{
 	display: block;
 	margin-bottom: 2.5em;
 	color: #3b3f45;
@@ -131,12 +163,14 @@ body {
 }
 
 /* Switch view animation (we hide the current view, switch the view class and show it again) */
-.fs-form.fs-show {
+.fs-form.fs-show 
+{
 	-webkit-animation: animFadeIn 0.5s;
 	animation: animFadeIn 0.5s;
 }
 
-@-webkit-keyframes animFadeIn {
+@-webkit-keyframes animFadeIn 
+{
 	0% { opacity: 0; }
 	100% { opacity: 1; }
 }
@@ -146,16 +180,19 @@ body {
 	100% { opacity: 1; }
 }
 
-.fs-form.fs-show .fs-fields {
+.fs-form.fs-show .fs-fields 
+{
 	-webkit-animation: animMove 0.5s;
 	animation: animMove 0.5s;
 }
 
-@-webkit-keyframes animMove {
+@-webkit-keyframes animMove 
+{
 	from { top: 100px; }
 }
 
-@keyframes animMove {
+@keyframes animMove 
+{
 	from { top: 100px; }
 } /* we need to use top here because otherwise all our fixed elements will become absolute */
 
@@ -164,41 +201,49 @@ body {
 .fs-nav-dots,
 button.fs-continue,
 .fs-message-error,
-.fs-message-final {
+.fs-message-final 
+{
 	visibility: hidden;
 }
 
-.no-js .fs-form-full .fs-fields > li {
+.no-js .fs-form-full .fs-fields > li 
+{
 	visibility: visible;
 }
 
-.fs-show {
+.fs-show 
+{
 	visibility: visible !important;
 }
 
 /* Some general styles */
-.fs-form-wrap button {
+.fs-form-wrap button 
+{
 	border: none;
 	background: none;
 }
 
-.fs-form-wrap button[disabled] {
+.fs-form-wrap button[disabled] 
+{
 	opacity: 0.3;
 	pointer-events: none;
 }
 
 .fs-form-wrap input:focus,
-.fs-form-wrap button:focus {
+.fs-form-wrap button:focus 
+{
 	outline: none;
 }
 
 /* Hide the submit button */
-.fs-form .fs-submit {
+.fs-form .fs-submit 
+{
 	display: none;
 }
 
 /* Fields */
-.fs-fields {
+.fs-fields 
+{
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
@@ -206,11 +251,13 @@ button.fs-continue,
 	list-style: none;
 }
 
-.fs-form-overview ol {
+.fs-form-overview ol 
+{
 	max-width: ;
 }
 
-.fs-fields > li {
+.fs-fields > li 
+{
 	position: relative;
 	z-index: 1;
 	margin: 0;
@@ -218,36 +265,42 @@ button.fs-continue,
 	border: none;
 }
 
-.fs-fields > li:hover {
+.fs-fields > li:hover 
+{
 	z-index: 999;
 }
 
-.js .fs-form-full .fs-fields > li {
+.js .fs-form-full .fs-fields > li 
+{
 	position: absolute;
 	width: 100%;
 	left: 2%;
 }
 
 .fs-form-overview .fs-fields > li,
-.no-js .fs-form .fs-fields > li {
+.no-js .fs-form .fs-fields > li 
+{
 	margin: 1em 0 2em;
 	padding: 0;
 	border-bottom: 2px solid rgba(0,0,0,0.1);
 }
 
 /* Labels & info */
-.fs-fields > li label {
+.fs-fields > li label 
+{
 	position: relative;
 }
 
-.fs-fields > li label.fs-field-label {
+.fs-fields > li label.fs-field-label 
+{
 	display: inline-block;
 	padding: 0 5px 1em 0;
 	font-weight: 700;
 	pointer-events: none;
 }
 
-.fs-form-full .fs-fields > li label[data-info]::after {
+.fs-form-full .fs-fields > li label[data-info]::after 
+{
 	position: relative;
 	display: inline-block;
 	margin-left: 10px;
@@ -268,7 +321,8 @@ button.fs-continue,
 	pointer-events: auto;
 }
 
-.fs-form-full .fs-fields > li label[data-info]::before {
+.fs-form-full .fs-fields > li label[data-info]::before 
+{
     position: absolute;
     bottom: 100%;
    	left: 0;
@@ -285,14 +339,16 @@ button.fs-continue,
     pointer-events: none;
 }
 
-.fs-form-full .fs-fields > li label[data-info]:hover::before {
+.fs-form-full .fs-fields > li label[data-info]:hover::before 
+{
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
 
 .fs-form-full .fs-fields > li label:hover ~ .fs-info,
-.fs-form-full .fs-fields > li .fs-info:hover {
+.fs-form-full .fs-fields > li .fs-info:hover 
+{
 	opacity: 1;
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
@@ -300,7 +356,8 @@ button.fs-continue,
 }
 
 /* Inputs */
-.fs-fields input {
+.fs-fields input 
+{
 	display: block;
 	margin: 0;
 	padding: 0 0 0.15em;
@@ -315,35 +372,42 @@ button.fs-continue,
 	border-radius: 0;
 }
 
-.fs-fields input:invalid {
+.fs-fields input:invalid 
+{
 	box-shadow: none; /* removes red shadow in FF*/
 }
 
-.fs-form-overview .fs-fields input {
+.fs-form-overview .fs-fields input 
+{
 	border-bottom-color: transparent;
 	color: rgba(0,0,0,0.5);
 }
 
-.fs-fields [required] {
+.fs-fields [required] 
+{
 	background-image: url(../img/abacusstar.svg);
 	background-position: top right;
 	background-size: 18px;
 	background-repeat: no-repeat;
 }
 
-.fs-fields input:focus {
+.fs-fields input:focus 
+{
 	background-color: #3b3f45; /* Fixes chrome bug with placeholder */
 }
 
-.fs-form-overview .fs-fields input:focus {
+.fs-form-overview .fs-fields input:focus 
+{
 	background-color: #fffed8; /* Fixes chrome bug with placeholder */
 }
 
-.fs-form-overview .fs-fields input {
+.fs-form-overview .fs-fields input 
+{
 	font-size: 1.2em;
 }
 
-.fs-fields .fs-radio-custom input[type="radio"] {
+.fs-fields .fs-radio-custom input[type="radio"] 
+{
 	position: absolute;
 	display: block;
 	margin: 30px auto 20px;
@@ -354,7 +418,8 @@ button.fs-continue,
 	cursor: pointer;
 }
 
-.fs-fields > li .fs-radio-custom span {
+.fs-fields > li .fs-radio-custom span 
+{
 	float: left;
 	position: relative;
 	margin-right: 3%;
@@ -367,21 +432,25 @@ button.fs-continue,
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.fs-fields > li .fs-radio-custom span label {
+.fs-fields > li .fs-radio-custom span label 
+{
 	color: rgba(0,0,0,0.4);
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
 
-.fs-form-overview .fs-fields > li .fs-radio-custom span {
+.fs-form-overview .fs-fields > li .fs-radio-custom span 
+{
 	max-width: 140px;
 }
 
-.fs-form-overview .fs-fields > li .fs-radio-custom span {
+.fs-form-overview .fs-fields > li .fs-radio-custom span 
+{
 	font-size: 75%;
 }
 
-.fs-fields > li .fs-radio-custom label {
+.fs-fields > li .fs-radio-custom label 
+{
 	display: block;
 	padding-top: 100%;
 	width: 100%;
@@ -389,7 +458,8 @@ button.fs-continue,
 	cursor: pointer;
 }
 
-.fs-fields .fs-radio-custom label::after {
+.fs-fields .fs-radio-custom label::after 
+{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -406,33 +476,40 @@ button.fs-continue,
 	transform: translate(-50%,-50%);
 }
 
-.fs-fields .fs-radio-custom label.radio-mobile::after {
+.fs-fields .fs-radio-custom label.radio-mobile::after 
+{
 	background-image: url(../img/mobile.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-social::after {
+.fs-fields .fs-radio-custom label.radio-social::after 
+{
 	background-image: url(../img/social.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-conversion::after {
+.fs-fields .fs-radio-custom label.radio-conversion::after 
+{
 	background-image: url(../img/conversion.svg);
 }
 
 .fs-fields .fs-radio-custom label:hover::after,
 .fs-fields input[type="radio"]:focus + label::after,
-.fs-fields input[type="radio"]:checked + label::after {
+.fs-fields input[type="radio"]:checked + label::after 
+{
 	opacity: 1;
 }
 
-.fs-fields .fs-radio-custom input[type="radio"]:checked + label {
+.fs-fields .fs-radio-custom input[type="radio"]:checked + label 
+{
 	color: #fffed8;
 }
 
-.fs-form-overview .fs-fields .fs-radio-custom input[type="radio"]:checked + label {
+.fs-form-overview .fs-fields .fs-radio-custom input[type="radio"]:checked + label 
+{
 	color: rgba(0,0,0,0.8);
 }
 
-.fs-fields textarea {
+.fs-fields textarea 
+{
 	padding: 0.25em;
 	width: 100%;
 	height: 200px;
@@ -444,41 +521,49 @@ button.fs-continue,
 	resize: none;
 }
 
-.fs-form-overview .fs-fields textarea {
+.fs-form-overview .fs-fields textarea 
+{
 	height: 100px;
 	color: rgba(0,0,0,0.5);
 }
 
-.fs-fields textarea:focus {
+.fs-fields textarea:focus 
+{
 	outline: none;
 }
 
-.fs-form-overview .fs-fields textarea {
+.fs-form-overview .fs-fields textarea 
+{
 	padding: 0;
 	border-color: transparent;
 }
 
-.fs-form-overview .fs-fields textarea:focus {
+.fs-form-overview .fs-fields textarea:focus 
+{
 	background: #fffed8;
 }
 
-.fs-form div.cs-select.cs-skin-boxes {
+.fs-form div.cs-select.cs-skin-boxes 
+{
 	display: block;
 }
 
-.fs-form-overview .cs-skin-boxes > span {
+.fs-form-overview .cs-skin-boxes > span 
+{
 	border-radius: 5px;
 	width: 90px;
 	height: 70px;
 	font-size: 0.8em;
 }
 
-.fs-form-overview .cs-skin-boxes > span::before {
+.fs-form-overview .cs-skin-boxes > span::before 
+{
 	padding-top: 50px;
 	box-shadow: 0 20px 0 #292c30, inset 0 -5px #292c30;
 }
 
-.fs-fields input.fs-mark {
+.fs-fields input.fs-mark 
+{
 	padding-left: 1em;
 	background-image: url(../img/dollar.svg);
 	background-position: 0% 0.15em;
@@ -495,32 +580,38 @@ button.fs-continue,
 
 /* placeholder */
 .fs-fields input::-webkit-input-placeholder,
-.fs-fields textarea::-webkit-input-placeholder {
+.fs-fields textarea::-webkit-input-placeholder 
+{
 	color: rgba(0,0,0,0.1);
 }
 
 .fs-fields input:-moz-placeholder,
-.fs-fields textarea:-moz-placeholder {
+.fs-fields textarea:-moz-placeholder 
+{
 	color: rgba(0,0,0,0.1);
 }
 
 .fs-fields input::-moz-placeholder,
-.fs-fields textarea::-moz-placeholder {
+.fs-fields textarea::-moz-placeholder 
+{
 	color: rgba(0,0,0,0.1);
 }
 
 .fs-fields input:-ms-input-placeholder,
-.fs-fields textarea:-ms-input-placeholder {
+.fs-fields textarea:-ms-input-placeholder 
+{
 	color: rgba(0,0,0,0.1);
 }
 
 /* Hide placeholder when focused in Webkit browsers */
-.fs-fields input:focus::-webkit-input-placeholder {
+.fs-fields input:focus::-webkit-input-placeholder 
+{
 	color: transparent;
 }
 
 /* Dot navigation */
-.fs-nav-dots {
+.fs-nav-dots 
+{
 	position: absolute;
 	top: 50%;
 	right: 32%;
@@ -529,7 +620,8 @@ button.fs-continue,
 	transform: translateY(-50%);
 }
 
-.fs-nav-dots button {
+.fs-nav-dots button 
+{
 	position: relative;
 	display: block;
 	padding: 0;
@@ -543,7 +635,8 @@ button.fs-continue,
 }
 
 .fs-nav-dots button::before,
-.fs-nav-dots button::after {
+.fs-nav-dots button::after 
+{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -557,19 +650,22 @@ button.fs-continue,
 	backface-visibility: hidden;
 }
 
-.fs-nav-dots button::after {
+.fs-nav-dots button::after 
+{
 	background-color: rgba(0,0,0,0.4);
 	-webkit-transform: perspective(1000px) rotate3d(0,1,0,180deg);
 	transform: perspective(1000px) rotate3d(0,1,0,180deg);
 }
 
-.fs-nav-dots button.fs-dot-current {
+.fs-nav-dots button.fs-dot-current 
+{
 	-webkit-transform: perspective(1000px) rotate3d(0,1,0,180deg);
 	transform: perspective(1000px) rotate3d(0,1,0,180deg);
 }
 
 .fs-nav-dots button:hover::before,
-.fs-nav-dots button.fs-dot-current::before {
+.fs-nav-dots button.fs-dot-current::before 
+{
 	background: #fffed8;
 }
 
@@ -578,7 +674,8 @@ button.fs-continue,
 
 /* Continue button and submit button */
 button.fs-submit,
-button.fs-continue {
+button.fs-continue 
+{
 	padding: 0.6em 1.5em;
 	border: 3px solid #232529;
 	border-radius: 40px;
@@ -587,32 +684,37 @@ button.fs-continue {
 }
 
 .fs-form-overview .fs-submit,
-.no-js .fs-form .fs-submit  {
+.no-js .fs-form .fs-submit 
+{
 	display: block;
 	justify-content: center;
 }
 
-.fs-form-overview .fs-submit {
+.fs-form-overview .fs-submit 
+{
 	border-color: #232529;
 	color: #232529;
 }
 
-button.fs-continue {
+button.fs-continue 
+{
 	position: absolute;
-	right: 50%;
-	bottom: 8%;
+	right: 53%;
+    bottom: 18%;
 	margin: 0 40px 60px 0;
 	font-size: 1.25em;
 }
 
 button.fs-submit:hover,
 button.fs-submit:focus,
-button.fs-continue:hover {
+button.fs-continue:hover 
+{
 	background: #232529;
 	color: #fff;
 }
 
-.fs-continue::after {
+.fs-continue::after 
+{
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -627,7 +729,8 @@ button.fs-continue:hover {
 }
 
 /* Error message */
-.fs-message-error {
+.fs-message-error 
+{
 	position: absolute;
 	bottom: 58%;
 	left: 51.5%;
@@ -642,7 +745,8 @@ button.fs-continue:hover {
 	transform: translate3d(-50%,-5px,0);
 }
 
-.fs-message-error.fs-show {
+.fs-message-error.fs-show
+{
 	opacity: 1;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	transition: transform 0.3s, opacity 0.3s;
@@ -651,115 +755,138 @@ button.fs-continue:hover {
 }
 
 /* Animation classes & animations */
-.fs-form li.fs-current {
+.fs-form li.fs-current 
+{
 	visibility: visible;
 }
 
 .fs-form li.fs-hide,
-.fs-form li.fs-show {
+.fs-form li.fs-show 
+{
 	pointer-events: none;
 }
 
 /* Hide current li when navigating to next question */
-.fs-form .fs-display-next .fs-hide {
+.fs-form .fs-display-next .fs-hide 
+{
 	visibility: visible;
 }
 
 .fs-form .fs-display-next .fs-hide .fs-anim-lower,
-.fs-form .fs-display-next .fs-hide .fs-anim-upper {
+.fs-form .fs-display-next .fs-hide .fs-anim-upper 
+{
 	-webkit-animation: animHideNext 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
 	animation: animHideNext 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
 }
 
-.fs-form .fs-display-next .fs-hide .fs-anim-lower {
+.fs-form .fs-display-next .fs-hide .fs-anim-lower 
+{
 	-webkit-animation-delay: 0.1s;
 	animation-delay: 0.1s;
 }
 
-@-webkit-keyframes animHideNext {
+@-webkit-keyframes animHideNext 
+{
 	to { opacity: 0; -webkit-transform: translate3d(0,-500px,0); }
 }
 
-@keyframes animHideNext {
+@keyframes animHideNext 
+{
 	to { opacity: 0; -webkit-transform: translate3d(0,-500px,0); transform: translate3d(0,-500px,0); }
 }
 
 /* Show new li when navigating to next question */
 .fs-form .fs-display-next .fs-show .fs-anim-lower,
-.fs-form .fs-display-next .fs-show .fs-anim-upper {
+.fs-form .fs-display-next .fs-show .fs-anim-upper 
+{
 	-webkit-animation: animShowNext 0.5s cubic-bezier(0.7,0,0.3,1) both 0.15s;
 	animation: animShowNext 0.5s cubic-bezier(0.7,0,0.3,1) both 0.15s;
 }
 
-.fs-form .fs-display-next .fs-show .fs-anim-lower {
+.fs-form .fs-display-next .fs-show .fs-anim-lower 
+{
 	-webkit-animation-delay: 0.25s;
 	animation-delay: 0.25s;
 }
 
-@-webkit-keyframes animShowNext {
+@-webkit-keyframes animShowNext 
+{
 	from { opacity: 0; -webkit-transform: translate3d(0,500px,0); }
 }
 
-@keyframes animShowNext {
+@keyframes animShowNext 
+{
 	from { opacity: 0; -webkit-transform: translate3d(0,500px,0); transform: translate3d(0,500px,0); }
 }
 
 /* Hide current li when navigating to previous question */
-.fs-form .fs-display-prev .fs-hide {
+.fs-form .fs-display-prev .fs-hide 
+{
 	visibility: visible;
 }
 
 .fs-form .fs-display-prev .fs-hide .fs-anim-lower,
-.fs-form .fs-display-prev .fs-hide .fs-anim-upper {
+.fs-form .fs-display-prev .fs-hide .fs-anim-upper 
+{
 	-webkit-animation: animHidePrev 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
 	animation: animHidePrev 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
 }
 
-.fs-form .fs-display-prev .fs-hide .fs-anim-upper {
+.fs-form .fs-display-prev .fs-hide .fs-anim-upper 
+{
 	-webkit-animation-delay: 0.1s;
 	animation-delay: 0.1s;
 }
 
-@-webkit-keyframes animHidePrev {
+@-webkit-keyframes animHidePrev 
+{
 	to { opacity: 0; -webkit-transform: translate3d(0,500px,0); }
 }
 
-@keyframes animHidePrev {
+@keyframes animHidePrev 
+{
 	to { opacity: 0; -webkit-transform: translate3d(0,500px,0); transform: translate3d(0,500px,0); }
 }
 
 /* Show new li when navigating to previous question */
 .fs-form .fs-display-prev .fs-show .fs-anim-lower,
-.fs-form .fs-display-prev .fs-show .fs-anim-upper {
+.fs-form .fs-display-prev .fs-show .fs-anim-upper 
+{
 	-webkit-animation: animShowPrev 0.5s cubic-bezier(0.7,0,0.3,1) both 0.15s;
 	animation: animShowPrev 0.5s cubic-bezier(0.7,0,0.3,1) both 0.15s;
 }
 
-.fs-form .fs-display-prev .fs-show .fs-anim-upper {
+.fs-form .fs-display-prev .fs-show .fs-anim-upper 
+{
 	-webkit-animation-delay: 0.25s;
 	animation-delay: 0.25s;
 }
 
-@-webkit-keyframes animShowPrev {
+@-webkit-keyframes animShowPrev 
+{
 	from { opacity: 0; -webkit-transform: translate3d(0,-500px,0); }
 }
 
-@keyframes animShowPrev {
+@keyframes animShowPrev 
+{
 	from { opacity: 0; -webkit-transform: translate3d(0,-500px,0); transform: translate3d(0,-500px,0); }
 }
 
 /* Remove IE clear cross */
-input[type=text]::-ms-clear {
+input[type=text]::-ms-clear 
+{
     display: none;
 }
 
 /* Adjust form for smaller screens */
-@media screen and (max-width: 420px) {
-
-
-
-	
-	.fs-form {
+@media screen and (max-width: 420px) 
+{
+	.container
+	{
+		background-color: #fffed8
+	}
+	.fs-form 
+	{
 		top: 6em;
 		right: 2em;
 		left: 0;
@@ -768,37 +895,54 @@ input[type=text]::-ms-clear {
 		font-size: 2em;
 	}
 
-	.fs-form.fs-form-overview {
-		top: 0;
-		right: 0;
-		padding: 1.5em 1em 8em 1em;
-		font-size: 1.5em;
-	}
-
-	.fs-title {
-		font-size: 0.8em;
-		margin-right: 40%;
-		padding: 2px;
-	}
-	.js .fs-form-full .fs-fields > li {
-
-		margin-left: 30%;
-	}
-	.fs-fields input {
-		font-size: 0.6em;
-	}
-
-	.fs-numbers {
-		margin: 20px;
-	}
-
-	.fs-nav-dots {
-		right: 26%;
-    	bottom: 1%;
+	.fs-form.fs-form-overview
+	{
+		top: -8%;
+	    right: 0;
+	    padding: 1.5em 1em 8em 1em;
+	    font-size: 1.3em;
+	    height: auto;
 		
 	}
 
-	button.fs-continue {
+	.fs-title 
+	{
+		font-size: 0.8em;
+		margin-right: 40%;
+		padding: 0.5%;
+	}
+
+	.js .fs-form-full .fs-fields > li 
+	{
+		margin-left: 30%;
+    	margin-top: -20%;
+    	font-size: 0.6em;
+	}
+	.fs-fields input 
+	{
+		font-size: 0.6em;
+	}
+
+	.fs-numbers 
+	{
+		margin: 20px;
+	}
+
+	.fs-nav-dots 
+	{
+		
+		display: inline-flex;
+    	right: 42%;
+
+	}
+
+	.fs-nav-dots button
+	{
+		margin: 0.2em;
+	}
+
+	button.fs-continue 
+	{
 		right: 42%;
     	bottom: 30%;
 		margin: 0;
@@ -809,7 +953,8 @@ input[type=text]::-ms-clear {
 		font-size: 2em;
 	}
 
-	button.fs-continue::before {
+	button.fs-continue::before 
+	{
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -821,21 +966,24 @@ input[type=text]::-ms-clear {
 		line-height: 50px;
 	}
 
-	.fs-continue::after {
+	.fs-continue::after 
+	{
 		content: '';
 	}
 
-	button.fs-submit {
+	button.fs-submit 
+	{
 		width: 100%;
 		font-size: 1.25em;
 	}
 
-	.fs-message-error {
-		bottom: 1.75em;
-		left: 0;
-		padding: 0 90px 0 2em;
-		width: 100%;
-		font-size: 1.5em;
+	.fs-message-error 
+	{
+		bottom: 36em;
+	    left: 0;
+	    padding: 0 0 0 12em;
+	    width: 100%;
+	    font-size: 0.6em;
 		-webkit-transform: translate3d(0,-5px,0);
 		transform: translate3d(0,-5px,0);
 	}
@@ -843,5 +991,105 @@ input[type=text]::-ms-clear {
 	.fs-message-error.fs-show {
 		-webkit-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
+	}
+}
+
+@media screen and (max-width: 380px) 
+{
+
+	.fs-form.fs-form-overview 
+	{
+		top: -15%;
+	}
+
+	.fs-title 
+	{
+			font-size: 0.7em;
+			margin-right: 40%;
+			padding: 0.3%;
+	}
+
+	.fs-message-error 
+	{
+			bottom: 42em;
+		    left: 0;
+		    padding: 0 0 0 10em;
+		    
+		   
+	}
+
+	.js .fs-form-full .fs-fields > li 
+	{
+		margin-left: 34%;
+	}
+
+	.fs-nav-dots 
+	{
+			
+		display: inline-flex;
+	   	right: 40%;
+
+	}
+
+	.fs-nav-dots button
+	{
+		margin: 0.4em;
+	}
+
+}
+
+@media screen and (max-width: 320px)
+{
+
+	.fs-title 
+	{
+		font-size: 0.6em;
+		margin-right: 40%;
+		padding: 0.3%;
+	}
+
+	.js .fs-form-full .fs-fields > li 
+	{
+		margin-left: 40%;
+		margin-top: -40%;
+		font-size: 0.7em;
+	}
+
+	.fs-fields input
+	{
+		font-size: 0.6em;
+	}
+
+	.fs-message-error 
+	{
+		bottom: 43em;
+	    left: 0;
+	    padding: 0 0 0 10em;
+	    font-size: 0.5em;
+	}
+		
+	.fs-nav-dots
+	{
+			
+		display: inline-flex;
+		right: 37%;
+
+	}
+
+	.fs-nav-dots button
+	{
+		margin: 0.5em;
+	}
+
+
+	button.fs-continue 
+	{
+		right: 40%;
+	    	
+	}
+		
+	.fs-form-overview .fs-fields > li
+	{
+		margin-top: -10%;
 	}
 }
