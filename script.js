@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
+    var i = 0;
+
     $('#down').on('click', function(e) {
         e.preventDefault();
-        var i = $('.flex--active').data('slide');
+        // var i = $('.flex--active').data('slide');
         i = (((i + 1) % 5) + 5) % 5;
         $('.slider__wrapper').find('.flex__container[data-slide=' + i + ']').addClass('flex--preStart');
         $('.flex--active').addClass('animate--end');
@@ -10,12 +12,12 @@ $(document).ready(function() {
             $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
             $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
         }, 800);
-        console.log(i);
+        // console.log(i);
     });
 
     $('#up').on('click', function(e) {
         e.preventDefault();
-        var i = $('.flex--active').data('slide');
+        // var i = $('.flex--active').data('slide');
         i = (((i - 1) % 5) + 5) % 5;
         $('.slider__wrapper').find('.flex__container[data-slide=' + i + ']').addClass('flex--preStart');
         $('.flex--active').addClass('animate--end');
@@ -23,19 +25,19 @@ $(document).ready(function() {
             $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
             $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
         }, 800);
-        console.log(i);
+        // console.log(i);
     });
 
-    $(document).scroll(function(e) {
-        e.preventDefault();
+    // $(document).scroll(function(e) {
+    //     e.preventDefault();
 
-        $('.slider__wrapper').find('.flex__container[data-slide=' + ((current % 5) + 1) + ']').addClass('flex--preStart');
-        $('.flex--active').addClass('animate--end');
-        setTimeout(function() {
-            $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-            $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-        }, 800);
-    })
+    //     $('.slider__wrapper').find('.flex__container[data-slide=' + (( % 5) + 1) + ']').addClass('flex--preStart');
+    //     $('.flex--active').addClass('animate--end');
+    //     setTimeout(function() {
+    //         $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+    //         $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+    //     }, 800);
+    // })
 
     $(document).bind('mousewheel', function(e) {
         var now = Date.now();
@@ -43,7 +45,7 @@ $(document).ready(function() {
         if (nt > now) return;
         $(this).data("lasttime", now + 500);
         var x = (e.originalEvent.wheelDelta > 0) ? 1 : -1;
-        var i = $('.flex--active').data('slide');
+        // var i = $('.flex--active').data('slide');
         i = (((i + x) % 5) + 5) % 5;
         $('.slider__wrapper').find('.flex__container[data-slide=' + i + ']').addClass('flex--preStart');
         $('.flex--active').addClass('animate--end');
@@ -75,7 +77,7 @@ $(document).ready(function() {
             // console.log('b');
             var x = (disY < 0) ? 1 : -1;
             // i = (i + x) % 5
-            var i = $('.flex--active').data('slide');
+            // var i = $('.flex--active').data('slide');
             i = (((i + x) % 5) + 5) % 5;
             $('.slider__wrapper').find('.flex__container[data-slide=' + i + ']').addClass('flex--preStart');
             $('.flex--active').addClass('animate--end');
@@ -87,12 +89,12 @@ $(document).ready(function() {
         }
     });
 
-    $("#formBtn").on('click', function(e) {
+    $("#formBtn").on('click', function(e) 
+    {
         e.preventDefault();
         $("img.artist__img").animate({ bottom: "-300px" }, "slow", function() {
             $("img.artist__img").hide();
         });
-
         $("div.flex__item.flex__item--left").animate({ left: '-1000px' }, "slow", function() {
             $("div.flex__item.flex__item--left").hide();
         });
@@ -101,5 +103,16 @@ $(document).ready(function() {
         });
 
         //$("body").css({ "background-color": "grey", "opacity": "0.4", "overflow": "none" });
+    });
+
+    $(".slide-nav").on('click', function(e)
+    {
+        $(event.target).addClass('borderclass');
+        setTimeout(function()
+        {
+            $(this).removeClass('slide-nav');
+            console.log('removeClass');
+        }, 1);
+        // console.log($(event.target).text());
     });
 });

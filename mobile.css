@@ -67,6 +67,18 @@
 
         text-align: center;
     }
+
+    .slider__navi
+    {
+        right: 1vw;
+        bottom: 1vh;
+    }
+
+    .slider__navi > a
+    {
+        min-width: 15vw;
+        margin: 2vh auto;
+    }
 }
 
 @media screen and (max-width: 420px)
@@ -96,7 +108,7 @@
     }
 }
 
-@media screen and (max-width: 380px)
+@media screen and (max-width: 350px)
 {
     #up,
     #down
@@ -122,5 +134,48 @@
     .text--normal
     {
         right: 24vw;
+    }
+
+    .slider__navi > a
+    {
+        min-width: 13vw;
+        margin: 2vh auto;
+    }
+}
+
+/*iphone x looked bad hence fixing that*/
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) 
+{
+    .flex__content
+    {
+        margin-top: 80px;
+    }
+
+    .slide-nav
+    {
+        height: 6vh;
+        min-height: 6vh;
+        transform: translateY(20px);
+    }
+}
+
+/*helping out overflow on desktop only*/
+
+@media only screen and (min-width: 992px)
+{
+    *
+    {
+        overflow: hidden;
+    }
+
+    .slider__navi > a:hover
+    {
+        transform: translateY(-2px);
+
+        box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
     }
 }
