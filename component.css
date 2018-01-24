@@ -72,7 +72,7 @@ body {
 	padding: 2.5em 30% 6em;
 	width: 100%;
 	height: 100%;
-	background: #fffed8;
+	background-color:white;
 	color: #3b3f45;
 	font-size: 1.2em;
 }
@@ -84,6 +84,7 @@ body {
 	content: 'Review & Submit';
 	font-weight: 700;
 	font-size: 1.85em;
+	background-color:white;
 }
 
 /* Switch view animation (we hide the current view, switch the view class and show it again) */
@@ -732,6 +733,7 @@ input[type=text]::-ms-clear {
 		right: 0;
 		padding: 1.5em 1em 8em 1em;
 		font-size: 1.5em;
+		background-color:white;
 	}
 
 	.fs-title {
