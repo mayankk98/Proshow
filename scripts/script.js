@@ -123,6 +123,7 @@ $(document).ready(function() {
                     $("div.flex__item.flex__item--right").hide();
                 });
                 $(".icon").hide();
+                $(".fs-form li.fs-current").show();
                 setTimeout(function() {
                 $(".slider__wrapper").css({ "display": "none" });
                    
@@ -140,7 +141,8 @@ $(document).ready(function() {
                 $("div.flex__item.flex__item--right").animate({ right: '0%' }, "slow", function() {
                     $("div.flex__item.flex__item--right").fadeIn();
                 });
-                $(".icon").fadeIn();        
+                $(".icon").fadeIn();   
+                $(".fs-form li.fs-current").hide();     
                 
             }
 
