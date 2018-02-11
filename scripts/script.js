@@ -3,6 +3,8 @@ $(document).ready(function() {
 //Animation on scroll  
 
     var i = 0;
+    $('.container').css({"display": "none"});
+    
 
     $(document).bind('mousewheel', function(e) {
         var now = Date.now();
@@ -73,8 +75,8 @@ $(document).ready(function() {
                     $("div.flex__item.flex__item--right").hide();
                 });
                 $(".icon").hide();
+                $('.container').css({"display": "block"});
                 $(".fs-form li.fs-current").show();
-                $(".fs-form li.fs-current").css({"visibility": "visible"});
                 setTimeout(function() {
                 $(".slider__wrapper").css({ "display": "none" });
                    

@@ -762,7 +762,7 @@ button.fs-continue:hover
 /* Animation classes & animations */
 .fs-form li.fs-current 
 {
-	visibility: none;
+	visibility: visible;
 }
 
 .fs-form li.fs-hide,

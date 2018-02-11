@@ -48,27 +48,11 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
 
-#up
-{
-    font-size: 6vh;
-    line-height: 130%;
-
-    text-align: center;
-}
-
-#down
-{
-    font-size: 6vh;
-    line-height: 170%;
-
-    text-align: center;
-}
 
 
 #formBtn
 {
     font-size: 6.4vh;
-
     text-align: center;
 }
 
