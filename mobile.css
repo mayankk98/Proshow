@@ -61,7 +61,7 @@
     .text--sub
     {
         position: relative;
-        top: 20px;
+        top: 25px;
 
         width: 80vw;
 
@@ -81,7 +81,7 @@
     }
 }
 
-@media screen and (max-width: 420px)
+@media screen and (max-width: 430px)
 {
     .artist__img
     {
@@ -106,7 +106,7 @@
     {
         right: 18vw;
     }
-    
+
     div.icon
     {   
         position:absolute;
