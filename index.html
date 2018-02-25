@@ -13,11 +13,11 @@
     <link rel="stylesheet" type="text/css" href="./component.css">
     <script src="./scripts/modernizr.custom.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script type="text/javascript" src="./scripts/script.js"></script>
 </head>
 
 <body>
-
     <div class="slider__wrapper">
         <div class="flex__container flex--artist1 flex--active" data-slide="0">
             <div class="flex__item flex__item--left">
@@ -78,43 +78,44 @@
     <div class="slider__navi">
         <a href="#" class="slide-nav" id="formBtn">&#xf040;</a>
     </div>
-
     <div class="container" localzoom="enabled">
-            <div class="fs-form-wrap" id="fs-form-wrap">
-                <div class="fs-title">
-                    <h1> Register Now</h1>      
-                </div>
-                <form id="myform" class="fs-form fs-form-full" autocomplete="off" method="post" action="https://www.google.com">
-                    <ol class="fs-fields">
-                        <li>
-                            <label class="fs-field-label fs-anim-upper" for="q1" >Name</label>
-                            <input class="fs-anim-lower" id="q1" name="q1" type="text"  required/>
-                        </li>
-                        <li>
-                            <label class="fs-field-label fs-anim-upper" for="q2" >Email Address</label>
-                            <input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="example@example.com" required/>
-                        </li>
-                        <li>
-                            <label class="fs-field-label fs-anim-upper" for="q3">Registration Number</label>
-                            <input class="fs-anim-lower" id="q3" name="q3" type="number" placeholder="16092320" required/>
-                        </li>
-                    </ol><!-- /fs-fields -->
-                    <button class="fs-submit" type="submit">Submit</button>
-                </form><!-- /fs-form -->
-            </div><!-- /fs-form-wrap -->
-    </div><!-- /container -->
-
-
-    <div class='icon'><div/>
-    <script src="./scripts/classie.js"></script>
-
-    <script src="./scripts/fullscreenForm.js"></script>
-    <script>
+        <div class="fs-form-wrap" id="fs-form-wrap">
+            <div class="fs-title">
+                <h1> Register Now</h1>
+            </div>
+            <form id="myform" class="fs-form fs-form-full" autocomplete="off" method="post" action="https://www.google.com">
+                <ol class="fs-fields">
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q1">Name</label>
+                        <input class="fs-anim-lower" id="q1" name="q1" type="text" required/>
+                    </li>
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q2">Email Address</label>
+                        <input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="example@example.com" required/>
+                    </li>
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q3">Registration Number</label>
+                        <input class="fs-anim-lower" id="q3" name="q3" type="number" placeholder="16092320" required/>
+                    </li>
+                </ol>
+                <!-- /fs-fields -->
+                <button class="fs-submit" type="submit">Submit</button>
+            </form>
+            <!-- /fs-form -->
+        </div>
+        <!-- /fs-form-wrap -->
+    </div>
+    <!-- /container -->
+    <div class='icon'>
+        <div/>
+        <script src="./scripts/classie.js"></script>
+        <script src="./scripts/fullscreenForm.js"></script>
+        <script>
         (function() {
-            var formWrap = document.getElementById( 'fs-form-wrap' );
+            var formWrap = document.getElementById('fs-form-wrap');
             new FForm(formWrap);
         })();
-    </script>
+        </script>
 </body>
 
 </html>

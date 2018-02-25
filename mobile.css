@@ -106,6 +106,14 @@
     {
         right: 18vw;
     }
+    
+    div.icon
+    {   
+        position:absolute;
+        display: block;
+        bottom: 30%;
+    } 
+
 }
 
 @media screen and (max-width: 350px)
