@@ -117,12 +117,14 @@ body
     text-transform: uppercase;
 }
 
+    
 .text--big
 {
     font-family: 'Poppins', sans-serif;
-    font-size: 7.5em;
+    font-size: 3.6em;
     font-weight: 700;
-    line-height: 25vh;
+    line-height: 15vh;
+    
 }
 
 .text--normal

@@ -32,6 +32,7 @@
         font-size: 5.5em;
 
         position: relative;
+        line-height: 8vh;
         right: 10vw;
         bottom: 15vh;
 
@@ -47,7 +48,7 @@
 
         position: relative;
         right: 15vw;
-        bottom: 20vh;
+        bottom: 10vh;
 
         width: 80vw;
     }
@@ -61,7 +62,7 @@
     .text--sub
     {
         position: relative;
-        top: 25px;
+        top: 0px;
 
         width: 80vw;
 
@@ -92,7 +93,7 @@
 
     .text--big
     {
-        font-size: 12vh;
+        font-size: 5.3vh;
 
         right: 32vw;
     }
