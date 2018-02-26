@@ -218,21 +218,17 @@ body
 }
 
 
-
-
-
-/* Second Artist */
+/* Artist 2 */
 
 .flex--artist2 .flex__item--left
 {
-    background-image: url('./images/bg1.jpg');
+    background-image: url('./images/bg4.jpg');
 }
 
 .flex--artist2 .flex__item--right
 {
-    background-image: url('./images/mandala1.jpg');
+    background-image: url('./images/mandala4.jpg');
 }
-
 
 
 
@@ -241,14 +237,13 @@ body
 
 .flex--artist3 .flex__item--left
 {
-    background-image: url('./images/bg3.jpg');
+    background-image: url('./images/bg1.jpg');
 }
 
 .flex--artist3 .flex__item--right
 {
-    background-image: url('./images/mandala2.jpg');
+    background-image: url('./images/mandala1.jpg');
 }
-
 
 
 
@@ -258,12 +253,12 @@ body
 
 .flex--artist4 .flex__item--left
 {
-    background-image: url('./images/bg4.jpg');
+    background-image: url('./images/bg3.jpg');
 }
 
 .flex--artist4 .flex__item--right
 {
-    background-image: url('./images/mandala4.jpg');
+    background-image: url('./images/mandala2.jpg');
 }
 
 
@@ -275,10 +270,27 @@ body
 
 .flex--artist5 .flex__item--left
 {
-    background-image: url('./images/bg5.png');
+    background-image: url('./images/bg4.jpg');
 }
 
 .flex--artist5 .flex__item--right
+{
+    background-image: url('./images/mandala4.jpg');
+}
+
+
+
+
+
+
+/* Artist 6 */
+
+.flex--artist6 .flex__item--left
+{
+    background-image: url('./images/bg5.png');
+}
+
+.flex--artist6 .flex__item--right
 {
     background-image: url('./images/mandala5.jpg');
 }

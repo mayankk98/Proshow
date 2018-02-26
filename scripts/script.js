@@ -19,7 +19,7 @@ $(document).ready(function()
         if (nt > now) return;
         $(this).data("lasttime", now + 1500);
         var x = (e.originalEvent.wheelDelta > 0) ? 1 : -1;
-        i = (((i - x) % 5) + 5) % 5;
+        i = (((i - x) % 6) + 6) % 6;
         $('.slider__wrapper').find('.flex__container[data-slide=' + i + ']').addClass('flex--preStart');
         $('.flex--active').addClass('animate--end');
         setTimeout(function() 
@@ -54,7 +54,7 @@ $(document).ready(function()
         if (Math.abs(disX) < treshold && Math.abs(disY) > minDistance) 
         {
             var x = (disY < 0) ? 1 : -1;
-            i = (((i + x) % 5) + 5) % 5;
+            i = (((i + x) % 6) + 6) % 6;
             $('.slider__wrapper').find('.flex__container[data-slide=' + i + ']').addClass('flex--preStart');
             $('.flex--active').addClass('animate--end');
             setTimeout(function() 
