@@ -298,6 +298,10 @@
 			if( this.navdir === 'next' ) {
 				if( this.isLastStep ) {
 					currentFld.querySelector( '.fs-anim-upper' ).addEventListener( animEndEventName, onEndAnimationFn );
+					setTimeout(function()
+						{
+							$("#captcha").css("display", "block");
+						}, 500);
 				}
 				else {
 					nextField.querySelector( '.fs-anim-lower' ).addEventListener( animEndEventName, onEndAnimationFn );

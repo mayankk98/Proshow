@@ -81,6 +81,14 @@ body
 	bottom:   100px;
 }
 
+.g-recaptcha
+{
+	min-height: 11vh;
+	background-color: black;
+	display: none;
+}
+
+
 @media screen and (max-width: 430px) {
 
 	#fs-form-wrap
@@ -284,7 +292,7 @@ button.fs-continue,
 .fs-form-overview .fs-fields > li,
 .no-js .fs-form .fs-fields > li 
 {
-	margin: 1em 0 2em;
+	margin: 1em 0 1em;
 	padding: 0;
 	border-bottom: 2px solid rgba(0,0,0,0.1);
 }
@@ -295,12 +303,15 @@ button.fs-continue,
 	position: relative;
 }
 
+
+
 .fs-fields > li label.fs-field-label 
 {
 	display: inline-block;
-	padding: 0 5px 1em 0;
+	padding: 0 3em 1em 0;
 	font-weight: 700;
 	pointer-events: none;
+	text-align: center;
 }
 
 .fs-form-full .fs-fields > li label[data-info]::after 
@@ -685,6 +696,8 @@ button.fs-continue
 	border-radius: 40px;
 	font-weight: 700;
 	color: rgba(0,0,0,0.4);
+	margin-top: 5%;
+	margin-left: 0%;
 }
 
 .fs-form-overview .fs-submit,
@@ -1040,7 +1053,7 @@ input[type=number]::-webkit-outer-spin-button {
 	{
 			
 		display: inline-flex;
-	   	right: 40%;
+	   	right: 36%;
 
 	}
 
