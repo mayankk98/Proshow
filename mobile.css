@@ -80,22 +80,29 @@
         min-width: 15vw;
         margin: 2vh auto;
     }
+
+    #formBtn
+    {
+        min-height: 60px;
+    }
 }
 
 @media screen and (max-width: 430px)
 {
     .artist__img
     {
-        right: 20vw;
-
-        max-height: 50vh;
+        right: 8vw;
+        max-width: unset;
+        min-height: unset;
+        min-width: unset;
+        max-height: 35vh;
     }
 
     .text--big
     {
         font-size: 5.3vh;
 
-        right: 32vw;
+        right: 30vw;
     }
 
     .text--sub
@@ -112,7 +119,7 @@
     {   
         position:absolute;
         display: block;
-        bottom: 30%;
+        bottom: 35%;
     } 
 
 }
@@ -169,6 +176,11 @@
         height: 6vh;
         min-height: 6vh;
         transform: translateY(20px);
+    }
+
+    .artist__img
+    {
+        right: -10vw;
     }
 }
 
