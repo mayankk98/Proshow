@@ -30,9 +30,9 @@
     .text--big
     {
         font-size: 5.5em;
+        line-height: 8vh;
 
         position: relative;
-        line-height: 8vh;
         right: 10vw;
         bottom: 15vh;
 
@@ -62,7 +62,7 @@
     .text--sub
     {
         position: relative;
-        top: 0px;
+        top: 0;
 
         width: 80vw;
 
@@ -92,9 +92,10 @@
     .artist__img
     {
         right: 8vw;
+
+        min-width: unset;
         max-width: unset;
         min-height: unset;
-        min-width: unset;
         max-height: 35vh;
     }
 
@@ -102,7 +103,12 @@
     {
         font-size: 5.3vh;
 
-        right: 30vw;
+        right: 21vw;
+
+        width: 100vw;
+        margin: auto 0;
+
+        text-align: center;
     }
 
     .text--sub
@@ -116,34 +122,52 @@
     }
 
     div.icon
-    {   
-        position:absolute;
-        display: block;
+    {
+        position: absolute;
         bottom: 35%;
-    } 
 
+        display: block;
+    }
 }
 
-@media screen and (max-width: 350px)
+@media screen and (max-width: 415px)
 {
-    #up,
-    #down
-    {
-        font-size: 6vh;
-    }
-
-
     .text--big
     {
-        font-size: 12vh;
+        right: 19.5vw;
+    }
+}
+
+/*galaxy s5*/
+@media screen and (max-width: 370px)
+{
+    .text--big
+    {
+        right: 19.5vw;
+    }
+
+    .text--normal
+    {
+        right: 23vw;
+    }
+}
+
+/*iphone 4*/
+@media screen and (max-width: 350px)
+{
+    .text--big
+    {
+        font-size: 6vh;
 
         top: -10vh;
-        right: 36vw;
+        right: 25vw;
+
+        margin: 5vh 0;
     }
 
     .text--sub
     {
-        top: 8vh;
+        /*top: 8vh;*/
         right: 24vw;
     }
 
@@ -157,14 +181,20 @@
         min-width: 13vw;
         margin: 2vh auto;
     }
+
+    #formBtn
+    {
+        height: 45px;
+        min-height: 45px;
+    }
 }
 
 /*iphone x looked bad hence fixing that*/
 
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) 
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3)
 {
     .flex__content
     {
@@ -175,6 +205,7 @@
     {
         height: 6vh;
         min-height: 6vh;
+
         transform: translateY(20px);
     }
 
