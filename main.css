@@ -9,6 +9,12 @@
     user-select: none;
 }
 
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
 .slider__navi
 {
     position: absolute;
@@ -274,10 +280,6 @@ body
 }
 
 
-
-
-
-
 /* Artist 6 */
 
 .flex--artist6 .flex__item--left
@@ -289,6 +291,59 @@ body
 {
     background-image: url('./images/mandala5.jpg');
 }
+
+/*beginning of the new artist*/
+
+/* Artist 7 */
+
+.flex--artist7 .flex__item--left
+{
+    background: red;
+}
+
+.flex--artist7 .flex__item--right
+{
+    background: yellow;
+}
+
+/* Artist 8 */
+
+.flex--artist8 .flex__item--left
+{
+    background: blue;
+}
+
+.flex--artist8 .flex__item--right
+{
+    background: pink;
+}
+
+/* Artist 9 */
+
+.flex--artist9 .flex__item--left
+{
+    background: green;
+}
+
+.flex--artist9 .flex__item--right
+{
+    background: purple;
+}
+
+
+/* Artist 10 */
+
+.flex--artist10 .flex__item--left
+{
+    background: blue;
+}
+
+.flex--artist10 .flex__item--right
+{
+    background: red;
+}
+
+/*end of the new artists*/
 
 
 .flex__content
@@ -441,3 +496,79 @@ body
 {
     z-index: 100;
 }
+
+
+
+
+
+/*New scroll icon*/
+.scroll-down, .arrow-down
+{
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.arrow-down {
+  user-select: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.scroll-down {
+  animation: bounce 1.8s ease-in-out infinite;
+  height: 60px;
+  border-radius: 50%;
+  padding-top: 30px;
+  width: 60px;
+  z-index: 30;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  cursor: pointer;
+  transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.scroll-down:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.arrow-down div {
+  background: #ffffff;
+  height: 4px;
+  width: 20px;
+}
+
+.arrow-down div:nth-child(1) {
+  transform: translateX(-6px) rotate(45deg);
+}
+
+.arrow-down div:nth-child(2) {
+  width: 22px;
+  transform: translate(6px, -4px) rotate(-45deg);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, 15px);
+  }
+  50% {
+    transform: translate(-50%, 0px);
+  }
+  100% {
+    transform: translate(-50%, 15px);
+  }
+}
+
+.scroll-down:hover {
+    background-color: transparent !important;
+    user-select: none;
+    transition: none;
+  }
+
+  #landing .arrow-down {
+    transform: translateY(-60px);
+  }
