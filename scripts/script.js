@@ -66,6 +66,15 @@ $(document).ready(function()
         }
     });
 
+    $(".slide-nav").on('click', function(e) {
+        $(event.target).addClass('borderclass');
+        setTimeout(function() {
+            $(this).removeClass('slide-nav');
+        }, 1);
+    });
+
+// ~~~~~~~~~~~~ignore iske neeche
+
     /************************************************************/
     //form visibility animation (being replaced with animate.css)
     /************************************************************/
@@ -109,7 +118,6 @@ $(document).ready(function()
 
             else 
             {
-
                 $(".slider__wrapper").css({ "display": "block" });
                 // $("img.artist__img").animate({ bottom: "0px" }, "slow", function() {
                 //     $("img.artist__img").fadeIn();
@@ -138,10 +146,5 @@ $(document).ready(function()
         });
     });
 
-    $(".slide-nav").on('click', function(e) {
-        $(event.target).addClass('borderclass');
-        setTimeout(function() {
-            $(this).removeClass('slide-nav');
-        }, 1);
-    });
+    
 });
