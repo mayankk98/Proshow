@@ -5,52 +5,87 @@
         overflow: hidden;
     }
 
+    .svgBackground {
+        height: 3vh;
+        width: 300vw;
+        position: absolute;
+        top: 50%;
+        margin-top: 25vh;
+        transform: skewX(5deg);
+        transform: scaleY(0.7);
+        z-index: 0;
+    }
+
+    .flipped {
+        transform: rotateX(-180deg);
+        margin-top: 570px;
+    }
+
+    .straight {
+        margin-top: -520px;
+    }
+
+    svg {
+        display: flex;
+        width: 50%;
+        height: 45vh;
+        position: absolute;
+    }
+
     .flex__item--right
     {
         width: 100%;
         height: 40vh;
         margin-top: 64vh;
+        display: none;
+    }
 
-        transform: skewY(-5deg);
+    .flex__content {
+        width: 90vw;
+        height: 60vh;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        margin-top: -45vh;
+        left: 50%;
+        margin-left: -45vw;
+        align-items: center;
     }
 
     .flex__item--left
     {
         width: 100%;
-        height: 70vh;
+        height: 100vh;
 
-        transform: skewY(-5deg);
     }
 
     .flex__item--left > *
     {
-        transform: skewY(5deg);
+        /*transform: skewY(5deg);*/
     }
 
     .text--big
     {
-        font-size: 5.5em;
+        font-size: 3.5em;
         line-height: 8vh;
-
-        position: relative;
-        right: 10vw;
-        bottom: 15vh;
-
-        width: 100vw;
-
         text-align: center;
+        width: 90vw;
+        position: absolute;
+        margin-top: 10vh;
+        margin-left: 0vw;
     }
 
     .text--normal
     {
-        font-size: 3vh;
+        font-size: 2.3vh;
         line-height: 4vh;
-
-        position: relative;
-        right: 15vw;
-        bottom: 10vh;
-
-        width: 80vw;
+        color: black;
+        width: 90vw;
+        text-align: center;
+        position: absolute;
+        z-index: 10;
+        margin-left: 0;
+        margin-top: 40vh;
     }
 
     .artist__img
@@ -61,14 +96,12 @@
 
     .text--sub
     {
-        position: relative;
-        top: 0;
-
-        width: 80vw;
-
         text-align: center;
+        width: 90vw;
+        position: absolute;
+        margin-left: 3vw;
+        margin-top: 5vh;
     }
-
     .slider__navi
     {
         right: 1vw;
@@ -102,23 +135,15 @@
     .text--big
     {
         font-size: 5.3vh;
-
-        right: 21vw;
-
-        width: 100vw;
-        margin: auto 0;
-
         text-align: center;
     }
 
     .text--sub
     {
-        right: 20vw;
     }
 
     .text--normal
     {
-        right: 18vw;
     }
 
     div.icon
@@ -134,7 +159,7 @@
 {
     .text--big
     {
-        right: 19.5vw;
+        /*right: 19.5vw;*/
     }
 }
 
@@ -143,7 +168,7 @@
 {
     .text--big
     {
-        right: 19.5vw;
+        /*right: 19.5vw;*/
     }
 
     .text--normal
@@ -198,8 +223,17 @@
 {
     .flex__content
     {
-        margin-top: 80px;
+        width: 90vw;
+        height: 60vh;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        margin-top: -45vh;
+        left: 50%;
+        margin-left: -45vw;
+        align-items: center;
     }
+
 
     .slide-nav
     {

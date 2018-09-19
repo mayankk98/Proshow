@@ -19,7 +19,7 @@ $(document).ready(function()
         if (nt > now) return;
         $(this).data("lasttime", now + 1500);
         var x = (e.originalEvent.wheelDelta > 0) ? 1 : -1;
-        i = (((i - x) % 5) + 5) % 5;
+        i = (((i - x) % 9) + 9) % 9;
         $('.slider__wrapper').find('.flex__container[data-slide=' + i + ']').addClass('flex--preStart');
         $('.flex--active').addClass('animate--end');
         setTimeout(function() 
@@ -66,6 +66,15 @@ $(document).ready(function()
         }
     });
 
+    $(".slide-nav").on('click', function(e) {
+        $(event.target).addClass('borderclass');
+        setTimeout(function() {
+            $(this).removeClass('slide-nav');
+        }, 1);
+    });
+
+// ~~~~~~~~~~~~ignore iske neeche
+
     /************************************************************/
     //form visibility animation (being replaced with animate.css)
     /************************************************************/
@@ -109,7 +118,6 @@ $(document).ready(function()
 
             else 
             {
-
                 $(".slider__wrapper").css({ "display": "block" });
                 // $("img.artist__img").animate({ bottom: "0px" }, "slow", function() {
                 //     $("img.artist__img").fadeIn();
@@ -138,10 +146,5 @@ $(document).ready(function()
         });
     });
 
-    $(".slide-nav").on('click', function(e) {
-        $(event.target).addClass('borderclass');
-        setTimeout(function() {
-            $(this).removeClass('slide-nav');
-        }, 1);
-    });
+    
 });

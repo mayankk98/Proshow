@@ -9,6 +9,10 @@
     user-select: none;
 }
 
+svg {
+    display: none;
+}
+
 .slider__navi
 {
     position: absolute;
@@ -200,44 +204,48 @@ body
     opacity: 1;
 }
 
+.flex__item--left {
+    background: linear-gradient(#fe8c00, #f83600, #fe8c00)
+}
+
 /* First Artist */
 
-.flex--artist1 .flex__item--left
+/*.flex--artist1 .flex__item--left
 {
     background-image: url('./images/bg2.jpg');
-}
+}*/
 
 .flex--artist1 .flex__item--right
 {
-    background-image: url('./images/mandala3.jpeg');
+    background-image: url('./images/bg.png');
 }
 
 
 /* Artist 2 */
 
-.flex--artist2 .flex__item--left
+/*.flex--artist2 .flex__item--left
 {
     background-image: url('./images/bg4.jpg');
-}
+}*/
 
 .flex--artist2 .flex__item--right
 {
-    background-image: url('./images/mandala4.jpg');
+    background-image: url('./images/bg.png');
 }
 
 
 
 
 /* Artist 3 */
-
+/*
 .flex--artist3 .flex__item--left
 {
     background-image: url('./images/bg1.jpg');
-}
+}*/
 
 .flex--artist3 .flex__item--right
 {
-    background-image: url('./images/mandala1.jpg');
+    background-image: url('./images/bg.png');
 }
 
 
@@ -246,14 +254,14 @@ body
 
 /* Artist 4 */
 
-.flex--artist4 .flex__item--left
+/*.flex--artist4 .flex__item--left
 {
     background-image: url('./images/bg3.jpg');
-}
+}*/
 
 .flex--artist4 .flex__item--right
 {
-    background-image: url('./images/mandala2.jpg');
+    background-image: url('./images/bg.png');
 }
 
 
@@ -262,15 +270,15 @@ body
 
 
 /* Artist 5 */
-
+/*
 .flex--artist5 .flex__item--left
 {
     background-image: url('./images/bg4.jpg');
-}
+}*/
 
 .flex--artist5 .flex__item--right
 {
-    background-image: url('./images/mandala4.jpg');
+    background-image: url('./images/bg.png');
 }
 
 
@@ -279,15 +287,54 @@ body
 
 
 /* Artist 6 */
-
+/*
 .flex--artist6 .flex__item--left
 {
     background-image: url('./images/bg5.png');
-}
+}*/
 
 .flex--artist6 .flex__item--right
 {
-    background-image: url('./images/mandala5.jpg');
+    background-image: url('./images/bg.png');
+}
+
+
+/* Artist 7 */
+/*
+.flex--artist7 .flex__item--left
+{
+    background-image: url('./images/bg5.png');
+}*/
+
+.flex--artist7 .flex__item--right
+{
+    background-image: url('./images/bg.png');
+}
+
+
+/* Artist 8 */
+
+/*.flex--artist8 .flex__item--left
+{
+    background-image: url('./images/bg5.png');
+}*/
+
+.flex--artist8 .flex__item--right
+{
+    background-image: url('./images/bg.png');
+}
+
+
+/* Artist 9 */
+
+/*.flex--artist9 .flex__item--left
+{
+    background-image: url('./images/bg5.png');
+}*/
+
+.flex--artist9 .flex__item--right
+{
+    background-image: url('./images/bg.png');
 }
 
 
@@ -434,7 +481,7 @@ body
     -webkit-transition: all .5s;
             transition: all .5s;
 
-    background: linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,0), rgba(0,0,0,1));
+    /*background: linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,0), rgba(0,0,0,1));*/
 }
 
 .flex__item--left *
