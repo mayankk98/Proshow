@@ -8,10 +8,10 @@ $(document).ready(function()
     /*********************************************/
 
     var i = 0;
-    $('.container').css({ "display": "none" });
+    // $('.container').css({ "display": "none" });
 
-    $(document).bind('mousewheel', function(e) 
-    {
+    const mouse_wheel_scroll = e => {
+        console.log("down");
         e.preventDefault();
         e.stopPropagation();
         var now = Date.now();
@@ -19,7 +19,8 @@ $(document).ready(function()
         if (nt > now) return;
         $(this).data("lasttime", now + 1500);
         var x = (e.originalEvent.wheelDelta > 0) ? 1 : -1;
-        i = (((i - x) % 5) + 5) % 5;
+        i = (((i - x) % 9) + 9) % 9;
+        console.log("once");
         $('.slider__wrapper').find('.flex__container[data-slide=' + i + ']').addClass('flex--preStart');
         $('.flex--active').addClass('animate--end');
         setTimeout(function() 
@@ -27,8 +28,23 @@ $(document).ready(function()
             $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
             $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
         }, 800);
+    }
 
-    });
+    (function(window, undefined){
+        var canCall = true;
+        window.funcName = function(){
+            if (!canCall) 
+                return;
+            //Your function
+            mouse_wheel_scroll();
+            canCall = false;
+            setTimeout(function(){
+                canCall = true;
+            }, 500);
+        }
+    })(window);
+
+    $(document).bind('mousewheel', mouse_wheel_scroll);
 
     /*********************************************/
     //touch events for mobile
@@ -55,7 +71,7 @@ $(document).ready(function()
         if (Math.abs(disX) < treshold && Math.abs(disY) > minDistance) 
         {
             var x = (disY < 0) ? 1 : -1;
-            i = (((i + x) % 5) + 5) % 5;
+            i = (((i + x) % 9) + 9) % 9;
             $('.slider__wrapper').find('.flex__container[data-slide=' + i + ']').addClass('flex--preStart');
             $('.flex--active').addClass('animate--end');
             setTimeout(function() 
